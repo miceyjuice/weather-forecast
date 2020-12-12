@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.search {
+  flex-basis: 100%;
+  display: flex;
+  height: 30rem;
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.search__title {
+  flex-basis: 100%;
+  text-align: center;
+  align-self: flex-end;
+}
+.search__title > h2 {
+  font-weight: 300;
+  font-size: 4rem;
+  color: #fff;
+}
+.search__input {
+  flex-basis: 100%;
+  text-align: center;
+  padding-top: 1rem;
+}
+.search__input > input {
+  padding: 1rem 2rem;
+  width: 52rem;
+  border: 0.1rem solid #fff;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+  color: #242424;
+  font-size: 1.5rem;
+}
