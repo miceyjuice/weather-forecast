@@ -51,6 +51,12 @@ html {
   color: #242424;
   font-size: 1.5rem;
 }
+.search__input > button {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #fff;
+  background: rgba(255, 255, 255, 0.9);
+}
 .main {
   flex-basis: 100%;
   display: flex;
@@ -61,25 +67,31 @@ html {
 .cityBoard {
   flex-basis: 70%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 2rem;
 }
 .weatherBlock {
-  flex-basis: 21%;
+  flex-basis: 19.24%;
   height: 31.2rem;
   display: flex;
   border-radius: 2rem;
   flex-wrap: wrap;
-  margin-right: 3rem;
+  margin: 2rem 0.5rem;
   box-shadow: 0 0 2rem #afafaf;
+  flex-flow: column;
+  background-color: #657292;
 }
 .weatherBlock__topInfo {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-basis: 100%;
   border-radius: 2rem;
-  box-shadow: 0 0 2rem #afafaf;
   position: relative;
-  z-index: 10;
+  background-color: #fff;
+  height: fit-content;
+  padding: 1rem 2.5rem;
 }
 .weatherBlock__topInfo__left {
   flex-basis: 50%;
@@ -93,10 +105,23 @@ html {
   color: #363636;
 }
 
+.weatherBlock__topInfo__left__city {
+  display: flex;
+  align-items: center;
+}
+
 .weatherBlock__topInfo__left__city > h4 {
   font-size: 1.2rem;
   font-weight: 500;
   color: #363636;
+  padding-left: 0.5rem;
+}
+.weatherBlock__topInfo__left__city__img {
+  background-image: url("./assets/pin.png");
+  background-position: center;
+  background-size: cover;
+  height: 0.9rem;
+  width: 0.8rem;
 }
 
 .weatherBlock__topInfo__right {
@@ -105,12 +130,14 @@ html {
   justify-content: flex-end;
 }
 .weatherBlock__additionalInfo {
-  flex-basis: 100%;
+  flex-basis: 20%;
   display: flex;
   justify-content: flex-end;
   border-radius: 0 0 2rem 2rem;
-  box-shadow: 0 0 2rem #afafaf;
-  z-index: 0;
+  background-color: #586484;
+  padding: 1rem 2.5rem;
+  color: #fff;
+  font-size: 1.1rem;
 }
 .weatherBlock__additionalInfo__name {
   flex-basis: 50%;
@@ -119,18 +146,29 @@ html {
   flex-basis: 50%;
   display: flex;
   justify-content: flex-end;
+  font-weight: 700;
 }
 .weatherBlock__hourlyForecast {
   display: flex;
   flex-basis: 100%;
   flex-wrap: wrap;
+  background-color: #657292;
+  border-radius: 2rem;
+  padding: 0.5rem 2.5rem 2rem 2.5rem;
+  color: #fff;
+  font-size: 1.1rem;
 }
 .weatherBlock__hourlyForecast__hour {
   display: flex;
-  flex-basis: 50%;
+  flex-basis: 80%;
 }
 .weatherBlock__hourlyForecast__value {
   display: flex;
-  flex-basis: 50%;
+  flex-basis: 20%;
   justify-content: flex-end;
+  font-weight: 700;
+}
+.weatherBlock__hourlyForecast__hour,
+.weatherBlock__hourlyForecast__value {
+  padding: 0.5rem 0;
 }
