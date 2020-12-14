@@ -59,15 +59,78 @@ html {
   justify-content: center;
 }
 .cityBoard {
-  flex-basis: 60%;
+  flex-basis: 70%;
   display: flex;
 }
 .weatherBlock {
-  flex-basis: 40%;
-  width: 22rem;
+  flex-basis: 21%;
   height: 31.2rem;
   display: flex;
-  border: 1px solid #aaa;
+  border-radius: 2rem;
+  flex-wrap: wrap;
+  margin-right: 3rem;
+  box-shadow: 0 0 2rem #afafaf;
 }
 .weatherBlock__topInfo {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-basis: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem #afafaf;
+  position: relative;
+  z-index: 10;
+}
+.weatherBlock__topInfo__left {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.weatherBlock__topInfo__left__temperature {
+  flex-basis: 100%;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #363636;
+}
+
+.weatherBlock__topInfo__left__city > h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #363636;
+}
+
+.weatherBlock__topInfo__right {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.weatherBlock__additionalInfo {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 0 2rem #afafaf;
+  z-index: 0;
+}
+.weatherBlock__additionalInfo__name {
+  flex-basis: 50%;
+}
+.weatherBlock__additionalInfo__value {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.weatherBlock__hourlyForecast {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+}
+.weatherBlock__hourlyForecast__hour {
+  display: flex;
+  flex-basis: 50%;
+}
+.weatherBlock__hourlyForecast__value {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: flex-end;
 }
