@@ -11,11 +11,10 @@ const timeStampToFullTime = (timeStamp) => {
   return `${hour}:${minute}:${second}`;
 };
 
-const getData = (url) => {
-  return fetch(url)
+const getData = (url) =>
+  fetch(url)
     .then((response) => response.json())
     .then((data) => data);
-};
 
 const returnDataFromAPI = async (cityName) => {
   const data = await getData(
@@ -72,7 +71,7 @@ const createWeatherBlock = (data) => {
     <div class="weatherBlock__hourlyForecast">
         <div class="weatherBlock__hourlyForecast__hour">
             <p class="weatherBlock__hourlyForecast__hour__text">
-              ${timeStampToFullTime(data.list[1].dt)}
+              ${data.list[1].dt_txt}
             </p>
         </div>
         <div class="weatherBlock__hourlyForecast__value">
@@ -82,7 +81,7 @@ const createWeatherBlock = (data) => {
         </div>
         <div class="weatherBlock__hourlyForecast__hour">
             <p class="weatherBlock__hourlyForecast__hour__text">
-            ${timeStampToFullTime(data.list[2].dt)}
+            ${data.list[2].dt_txt}
             </p>
         </div>
         <div class="weatherBlock__hourlyForecast__value">
@@ -92,7 +91,7 @@ const createWeatherBlock = (data) => {
         </div>
         <div class="weatherBlock__hourlyForecast__hour">
             <p class="weatherBlock__hourlyForecast__hour__text">
-            ${timeStampToFullTime(data.list[3].dt)}
+            ${data.list[3].dt_txt}
             </p>
         </div>
         <div class="weatherBlock__hourlyForecast__value">
@@ -102,7 +101,7 @@ const createWeatherBlock = (data) => {
         </div>
         <div class="weatherBlock__hourlyForecast__hour">
             <p class="weatherBlock__hourlyForecast__hour__text">
-            ${timeStampToFullTime(data.list[4].dt)}
+            ${data.list[4].dt_txt}
             </p>
         </div>
         <div class="weatherBlock__hourlyForecast__value">
@@ -112,7 +111,7 @@ const createWeatherBlock = (data) => {
         </div>
         <div class="weatherBlock__hourlyForecast__hour">
             <p class="weatherBlock__hourlyForecast__hour__text">
-            ${timeStampToFullTime(data.list[1].dt)}
+            ${data.list[5].dt_txt}
             </p>
         </div>
         <div class="weatherBlock__hourlyForecast__value">
