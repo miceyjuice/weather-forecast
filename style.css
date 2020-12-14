@@ -12,6 +12,7 @@ html {
   height: 100vh;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .search {
   flex-basis: 100%;
@@ -49,4 +50,24 @@ html {
   outline: none;
   color: #242424;
   font-size: 1.5rem;
+}
+.main {
+  flex-basis: 100%;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.cityBoard {
+  flex-basis: 60%;
+  display: flex;
+}
+.weatherBlock {
+  flex-basis: 40%;
+  width: 22rem;
+  height: 31.2rem;
+  display: flex;
+  border: 1px solid #aaa;
+}
+.weatherBlock__topInfo {
 }
