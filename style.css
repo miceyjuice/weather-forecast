@@ -45,17 +45,24 @@ html {
   padding: 1rem 2rem;
   width: 52rem;
   border: 0.1rem solid #fff;
-  border-radius: 1rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem 0 0 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
   outline: none;
-  color: #242424;
+  color: #586484;
   font-size: 1.5rem;
+}
+.search__input > input::placeholder {
+  color: #363636;
 }
 .search__input > button {
   padding: 1rem 2rem;
-  border-radius: 1rem;
+  border-radius: 0 1rem 1rem 0;
+  font-size: 1.5rem;
+  background-color: #586484;
   border: 0.1rem solid #fff;
-  background: rgba(255, 255, 255, 0.9);
+  color: #fff;
+  margin: -0.4rem;
+  cursor: pointer;
 }
 .main {
   flex-basis: 100%;
