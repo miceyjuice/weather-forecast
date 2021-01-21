@@ -206,7 +206,8 @@ class UIContent {
 
 document.addEventListener("DOMContentLoaded", () => {
   new UIContent();
-  setTimeout(() => {
+  setInterval(() => {
     new UIContent();
+    window.location.reload();
   }, 120 * 1000);
 });
