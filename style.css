@@ -42,24 +42,24 @@ html {
   padding-top: 1rem;
 }
 .search__input > input {
-  padding: 1rem 2rem;
+  padding: 1.3rem 2rem;
   width: 52rem;
-  border: 0.1rem solid #fff;
-  border-radius: 1rem 0 0 1rem;
+  border: none;
+  border-radius: 3rem 0 0 3rem;
   background-color: rgba(255, 255, 255, 0.8);
   outline: none;
   color: #586484;
   font-size: 1.5rem;
 }
 .search__input > input::placeholder {
-  color: #363636;
+  color: #aaa;
 }
 .search__input > button {
-  padding: 1rem 2rem;
-  border-radius: 0 1rem 1rem 0;
+  padding: 1.3rem 2rem;
+  border-radius: 0 3rem 3rem 0;
   font-size: 1.5rem;
   background-color: #586484;
-  border: 0.1rem solid #fff;
+  border: none;
   color: #fff;
   margin: -0.4rem;
   cursor: pointer;
@@ -77,6 +77,7 @@ html {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 2rem;
+  gap: 1.2rem;
 }
 .weatherBlock {
   flex-basis: 19.24%;
@@ -84,7 +85,6 @@ html {
   display: flex;
   border-radius: 2rem;
   flex-wrap: wrap;
-  margin: 2rem 0.5rem;
   box-shadow: 0 0 2rem #afafaf;
   flex-flow: column;
   background-color: #657292;
@@ -123,6 +123,12 @@ html {
   color: #363636;
   padding-left: 0.5rem;
 }
+
+.weatherBlock__topInfo__left__city > p {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
 .weatherBlock__topInfo__left__city__img {
   background-image: url("./assets/pin.png");
   background-position: center;
@@ -178,4 +184,7 @@ html {
 .weatherBlock__hourlyForecast__hour,
 .weatherBlock__hourlyForecast__value {
   padding: 0.5rem 0;
+}
+.degree {
+  font-size: 2.5rem;
 }
